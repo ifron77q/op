@@ -1,144 +1,558 @@
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="description" content="HTTrack is an easy-to-use website mirror utility. It allows you to download a World Wide website from the Internet to a local directory,building recursively all structures, getting html, images, and other files from the server to your computer. Links are rebuiltrelatively so that you can freely browse to the local site (works with any browser). You can mirror several sites together so that you can jump from one toanother. You can, also, update an existing mirror site, or resume an interrupted download. The robot is fully configurable, with an integrated help" />
-	<meta name="keywords" content="httrack, HTTRACK, HTTrack, winhttrack, WINHTTRACK, WinHTTrack, offline browser, web mirror utility, aspirateur web, surf offline, web capture, www mirror utility, browse offline, local  site builder, website mirroring, aspirateur www, internet grabber, capture de site web, internet tool, hors connexion, unix, dos, windows 95, windows 98, solaris, ibm580, AIX 4.0, HTS, HTGet, web aspirator, web aspirateur, libre, GPL, GNU, free software" />
-	<title>Local index - HTTrack Website Copier</title>
-  <!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<style type="text/css">
-	<!--
-
-body {
-	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
-	background: #77b;
-}
-body, td {
-	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	}
-
-#subTitle {
-	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
-	}
-
-#siteNavigation a, #siteNavigation .current {
-	font-weight: bold;  color: #448;
-	}
-#siteNavigation a:link    { text-decoration: none; }
-#siteNavigation a:visited { text-decoration: none; }
-
-#siteNavigation .current { background-color: #ccd; }
-
-#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
-#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
-
-
-a:link    { text-decoration: underline;  color: rgb(17, 17, 211); }
-a:visited { text-decoration: underline;  color: #000; }
-a:hover   { text-decoration: underline;  color: #c00; }
-a:active  { text-decoration: underline; }
-
-#pageContent {
-	clear: both;
-	border-bottom: 6px solid #000;
-	padding: 10px;  padding-top: 20px;
-	line-height: 1.65em;
-	background-image: url(backblue.gif);
-	background-repeat: no-repeat;
-	background-position: top right;
-	}
-
-#pageContent, #siteNavigation {
-	background-color: #ccd;
-	}
-
-
-.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
-.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
-
-hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
-
-h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
-h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
-h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
-h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
-
-.blak { background-color: #000; }
-.hide { display: none; }
-.tableWidth { min-width: 400px; }
-
-.tblRegular       { border-collapse: collapse; }
-.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
-.tblHeaderColor, .tblHeaderColor td { background: #99c; }
-.tblNoBorder td   { border: 0; }
-
-
-// -->
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ifron Store — Dark Neon</title>
+  <meta name="description" content="Ifron Store — a sleek dark‑neon demo eCommerce SPA with storefront + admin. Home, PLP, PDP, Cart, Checkout, Confirmation, Account, Categories, Subcategories, Reviews, Live Chat; Admin with Orders, Customers, Inventory, Analytics, RBAC." />
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#0d152c; --panel-2:#0b1222; --text:#e6ecff; --muted:#98a6c5;
+      --primary:#7c5cff; --accent:#22e3ff; --hot:#ff4d6d; --good:#22c55e; --warn:#f59e0b; --ring:#4f46e5;
+      --radius:18px; --shadow: 0 10px 30px rgba(0,0,0,.45), 0 0 0 1px rgba(124,92,255,.08) inset;
+    }
+    *{ box-sizing: border-box; }
+    html, body{ height:100%; }
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Inter, Roboto, "Helvetica Neue", Arial;
+      background:
+        radial-gradient(700px 400px at 10% -10%, rgba(124,92,255,.20), transparent 60%),
+        radial-gradient(600px 400px at 110% 10%, rgba(34,227,255,.18), transparent 60%),
+        radial-gradient(500px 300px at 50% 110%, rgba(255,77,109,.12), transparent 60%),
+        linear-gradient(180deg, #080b18, #0b1020 40%, #0b1020 100%);
+      color: var(--text);
+      -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+    }
+    header{ position: sticky; top:0; z-index:50; backdrop-filter: blur(8px);
+      background: linear-gradient(180deg, rgba(8,11,24,.85), rgba(8,11,24,.35)); border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .nav{ max-width:1200px; margin:0 auto; display:flex; align-items:center; gap:16px; padding:14px 18px; }
+    .brand{ display:flex; align-items:center; gap:10px; text-decoration:none; }
+    .logo{ width:36px; height:36px; border-radius:12px; background: linear-gradient(135deg, var(--primary), var(--accent)); box-shadow: 0 0 24px rgba(124,92,255,.5); }
+    .brand span{ font-weight:800; letter-spacing:.3px; font-size:18px; color: var(--text); }
+    .navlinks{ display:flex; gap:10px; flex-wrap:wrap; }
+    .navlinks a{ color:var(--text); text-decoration:none; padding:8px 12px; border-radius:12px; opacity:.9; }
+    .navlinks a.active, .navlinks a:hover{ background:rgba(124,92,255,.12); outline:1px solid rgba(124,92,255,.25); }
+    .searchbar{ flex:1; display:flex; gap:10px; }
+    .searchbar input{ width:100%; background: var(--panel); border:1px solid rgba(255,255,255,.08); color:var(--text); padding:10px 12px; border-radius:12px; outline: none; box-shadow: inset 0 0 0 1px rgba(124,92,255,.06); }
+    .searchbar button{ background: linear-gradient(135deg, var(--primary), var(--accent)); color:#071220; border:none; padding:10px 14px; border-radius:12px; cursor:pointer; font-weight:700; }
+    .pill{ font-size:12px; opacity:.9; color:var(--muted); }
+    main{ max-width:1200px; margin:24px auto; padding:0 18px 60px; }
+    .grid{ display:grid; gap:16px; }
+    .grid.cols-2{ grid-template-columns: repeat(2, minmax(0,1fr)); }
+    .grid.cols-3{ grid-template-columns: repeat(3, minmax(0,1fr)); }
+    .grid.cols-4{ grid-template-columns: repeat(4, minmax(0,1fr)); }
+    @media (max-width: 1000px){ .grid.cols-4{ grid-template-columns: repeat(3, minmax(0,1fr)); } }
+    @media (max-width: 760px){ .grid.cols-3, .grid.cols-4{ grid-template-columns: repeat(2, minmax(0,1fr)); } .nav{ gap:10px; } }
+    @media (max-width: 520px){ .grid.cols-2, .grid.cols-3, .grid.cols-4{ grid-template-columns: 1fr; } .navlinks{ display:none; } .searchbar button{ display:none; } }
+    .card{ background: linear-gradient(180deg, rgba(14,20,44,.9), rgba(11,18,34,.92)); border:1px solid rgba(255,255,255,.08); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .card.pad{ padding:18px; }
+    .hero{ display:grid; grid-template-columns: 1.3fr .7fr; gap:18px; }
+    .hero .banner{ min-height:260px; border-radius: var(--radius); position:relative; overflow:hidden; }
+    .hero h1{ margin:0 0 8px; font-size:32px; letter-spacing:.2px; }
+    .hero p{ margin:0; color:var(--muted); }
+    .hero .cta{ margin-top:16px; display:flex; gap:10px; }
+    .btn{ display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border-radius:12px; border:1px solid rgba(255,255,255,.08); cursor:pointer; text-decoration:none; color:var(--text); }
+    .btn.primary{ background: linear-gradient(135deg, var(--primary), var(--accent)); color:#071220; font-weight:800; border:none; }
+    .btn.ghost:hover{ background: rgba(124,92,255,.12); }
+    .section-title{ display:flex; align-items:center; justify-content:space-between; margin:26px 0 12px; }
+    .section-title h2{ margin:0; font-size:20px; letter-spacing:.3px; }
+    .product{ display:flex; flex-direction:column; overflow:hidden; }
+    .product .img{ aspect-ratio: 4/3; background:#0a0f20; border-bottom:1px solid rgba(255,255,255,.06); position:relative; }
+    .product .img canvas{ width:100%; height:100%; display:block; }
+    .badge{ position:absolute; top:10px; left:10px; background: rgba(124,92,255,.28); border:1px solid rgba(124,92,255,.45); color:#cfd6ff; font-size:12px; padding:4px 8px; border-radius:999px; backdrop-filter: blur(6px); }
+    .product .body{ padding:12px 14px; display:grid; gap:6px; }
+    .price{ font-weight:800; }
+    .strikethrough{ text-decoration: line-through; opacity:.6; margin-left:8px; font-weight:500; }
+    .muted{ color:var(--muted); }
+    .qty{ display:flex; align-items:center; gap:8px; margin-top:8px; }
+    .qty button{ width:28px; height:28px; border-radius:10px; background: var(--panel); color:var(--text); border:1px solid rgba(255,255,255,.08); cursor:pointer; }
+    .row{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+    .row.spread{ justify-content:space-between; }
+    .table{ width:100%; border-collapse: collapse; }
+    .table th, .table td{ text-align:left; padding:12px 10px; border-bottom:1px solid rgba(255,255,255,.08); }
+    .table th{ color:var(--muted); font-weight:600; }
+    .input, select, textarea{ width:100%; padding:10px 12px; border-radius:12px; background: var(--panel); color:var(--text); border:1px solid rgba(255,255,255,.08); outline:none; }
+    .input:focus, textarea:focus{ box-shadow: 0 0 0 2px rgba(124,92,255,.35); border-color: rgba(124,92,255,.55); }
+    .chip{ padding:8px 10px; border-radius:12px; border:1px solid rgba(255,255,255,.08); background: var(--panel); cursor:pointer; }
+    .chip.active, .chip:hover{ outline:1px solid rgba(124,92,255,.35); background: rgba(124,92,255,.12); }
+    .notice{ padding:10px 12px; background: linear-gradient(180deg, rgba(34,227,255,.1), rgba(14,20,44,.4)); border:1px solid rgba(34,227,255,.35); border-radius:12px; color:#d7f7ff; }
+    footer{ color:var(--muted); border-top:1px solid rgba(255,255,255,.06); padding:30px 18px; text-align:center; }
+    .link{ color:var(--accent); text-decoration:none; }
+    /* Chatbot */
+    #chatFab{ position:fixed; right:18px; bottom:18px; z-index:60; }
+    #chatPanel{ position:fixed; right:18px; bottom:80px; width:340px; max-height:60vh; display:none; flex-direction:column; gap:8px; padding:12px; z-index:60; }
+    #chatLog{ background:var(--panel); padding:10px; border-radius:12px; overflow:auto; height:300px; border:1px solid rgba(255,255,255,.08); }
+    .bubble{ padding:8px 10px; border-radius:12px; margin:6px 0; max-width:85%; }
+    .bubble.user{ background:rgba(124,92,255,.25); border:1px solid rgba(124,92,255,.4); margin-left:auto; }
+    .bubble.bot{ background:rgba(34,227,255,.18); border:1px solid rgba(34,227,255,.35); }
+  </style>
 </head>
+<body>
+  <header>
+    <div class="nav">
+      <a class="brand" href="#/home" onclick="route('#/home')" aria-label="Ifron Store Home">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Ifron Store</span>
+      </a>
+      <nav class="navlinks" id="navlinks"></nav>
+      <div class="searchbar">
+        <input id="search" type="search" placeholder="Search products... (Ctrl+/)" />
+        <button onclick="doSearch()">Search</button>
+      </div>
+      <a class="btn ghost" href="#/cart" onclick="route('#/cart')">🛒 <span id="cartCount">0</span></a>
+    </div>
+  </header>
+  <main id="app"></main>
+  <footer>
+    <div>© <span id="year"></span> Ifron Store — Demo. <a class="link" href="#/about" onclick="route('#/about')">About</a> · <a class="link" href="#/privacy" onclick="route('#/privacy')">Privacy</a> · <a class="link" href="#/terms" onclick="route('#/terms')">Terms</a></div>
+  </footer>
 
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
-	<tr>
-	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
-	</tr>
-</table>
-<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
-<tr class="blak">
-<td>
-	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
-	<tr>
-	<td colspan="6"> 
-		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
-		<tr> 
-		<td id="pageContent"> 
-<!-- ==================== End prologue ==================== -->
+  <!-- Chatbot / Live Chat -->
+  <div id="chatFab"><button class="btn primary" onclick="toggleChat()">💬 Chat</button></div>
+  <div id="chatPanel" class="card pad">
+    <div class="row spread"><b>Live Chat (demo)</b><a class="link" onclick="toggleChat()">Close</a></div>
+    <div id="chatLog"></div>
+    <div class="row"><input id="chatInput" class="input" placeholder="Type a message..." onkeydown="if(event.key==='Enter') sendChat()" /><button class="btn primary" onclick="sendChat()">Send</button></div>
+    <div class="pill">Tip: This is a local demo bot with canned replies.</div>
+  </div>
 
-	<meta name="generator" content="HTTrack Website Copier/3.x">
-	<TITLE>Local index - HTTrack</TITLE>
-</HEAD>
-<BODY>
-<H1 ALIGN=Center>Index of locally available sites:</H1>
-	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
-		<TR>
-			<TD BACKGROUND="fade.gif">
-				&middot;
-					<A HREF="vortexcity.de/index.html">
-						Startseite
-					</A>		
-			</TD>
-		</TR>
-	</TABLE>
-	<BR>
-	<BR>
-	<BR>
-  	<H6 ALIGN="RIGHT">
-	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
-	</H6>
-	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
-	<!-- Thanks for using HTTrack Website Copier! -->
-	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=vortexcity.de/index.html">
+  <script>
+    // --------- Demo Data & Persistence ---------
+    const ls = (k,v)=> v===undefined? JSON.parse(localStorage.getItem(k)||'null') : localStorage.setItem(k, JSON.stringify(v));
+    const state = {
+      user: ls('ifron:user') || null,
+      users: ls('ifron:users') || [],
+      cart: ls('ifron:cart') || [],
+      orders: ls('ifron:orders') || [],
+      reviews: ls('ifron:reviews') || [], // {productId, user, rating, text, date}
+      products: [
+        {id:'p1', name:'Aurora Headphones', price: 120, compareAt: 159, stock: 25, rating:4.6, category:'electronics', sub:'audio', imgSeed:'🎧', tags:['audio','wireless']},
+        {id:'p2', name:'Photon Keyboard', price: 89, compareAt: 119, stock: 30, rating:4.4, category:'electronics', sub:'peripherals', imgSeed:'⌨️', tags:['keyboard','rgb']},
+        {id:'p3', name:'Nebula Sneakers', price: 75, compareAt: 95, stock: 12, rating:4.2, category:'fashion', sub:'shoes', imgSeed:'👟', tags:['shoes']},
+        {id:'p4', name:'Stellar Jacket', price: 139, compareAt: 179, stock: 8, rating:4.7, category:'fashion', sub:'outerwear', imgSeed:'🧥', tags:['jacket']},
+        {id:'p5', name:'Cosmo Mixer', price: 49, compareAt: 69, stock: 20, rating:4.1, category:'home-kitchen', sub:'appliances', imgSeed:'🥣', tags:['kitchen']},
+        {id:'p6', name:'Orbit Lamp', price: 39, compareAt: 55, stock: 16, rating:4.3, category:'home-kitchen', sub:'lighting', imgSeed:'💡', tags:['lamp']},
+        {id:'p7', name:'Galaxy Watch', price: 160, compareAt: 199, stock: 14, rating:4.5, category:'electronics', sub:'wearables', imgSeed:'⌚', tags:['smartwatch']},
+        {id:'p8', name:'Meteor Backpack', price: 59, compareAt: 79, stock: 22, rating:4.0, category:'fashion', sub:'bags', imgSeed:'🎒', tags:['bag']},
+      ],
+      categories:[
+        {slug:'electronics', name:'Electronics', subs:['audio','peripherals','wearables']},
+        {slug:'fashion', name:'Fashion', subs:['shoes','outerwear','bags']},
+        {slug:'home-kitchen', name:'Home & Kitchen', subs:['appliances','lighting']},
+      ],
+      lastOrderId: ls('ifron:lastOrderId') || null,
+    };
 
+    // Seed an admin user for demo
+    if(!state.users.find(u=>u.email==='admin@ifron.local')){
+      state.users.push({name:'Demo Admin', email:'admin@ifron.local', pass:'admin123', role:'admin'});
+      ls('ifron:users', state.users);
+    }
+    // Migrate legacy single-user storage
+    if(state.user && !state.users.find(u=>u.email===state.user.email)){
+      state.users.push({...state.user, role: state.user.role||'customer'});
+      ls('ifron:users', state.users);
+    }
 
-<!-- ==================== Start epilogue ==================== -->
-		</td>
-		</tr>
-		</table>
-	</td>
-	</tr>
-	</table>
-</td>
-</tr>
-</table>
+    function save(){ ls('ifron:cart', state.cart); ls('ifron:orders', state.orders); ls('ifron:reviews', state.reviews); if(state.user) ls('ifron:user', state.user); updateCartCount(); }
+    function money(n){ return '$' + n.toFixed(2); }
+    function updateCartCount(){ const s = state.cart.reduce((a,i)=>a+i.qty,0); document.getElementById('cartCount').textContent = s; }
 
-<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
-	<tr>
-	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
-	</tr>
-</table>
+    // --------- Router ---------
+    function parseRoute(){ const hash = location.hash || '#/home'; const parts = hash.replace(/^#\//,'').split('/'); return { route: parts[0]||'home', p1: parts[1]||null, p2: parts[2]||null }; }
+    function route(h){ if(h) location.hash = h; render(); }
 
+    // --------- UI Helpers ---------
+    function navUI(){ const n = document.getElementById('navlinks'); n.innerHTML = ''; const items = [
+        {name:'Home', href:'#/home'},
+        {name:'Products', href:'#/plp'},
+        {name:'Categories', href:'#/categories'},
+        {name:'Orders', href:'#/orders'},
+        {name:'Account', href:'#/account'},
+        {name:'Admin', href:'#/admin', auth:'admin'},
+        {name:'Login', href:'#/login', auth:'out'},
+        {name:'Signup', href:'#/signup', auth:'out'},
+        {name:'Logout', href:'#/logout', auth:'in'},
+      ];
+      items.forEach(item=>{
+        if(item.auth==='in' && !state.user) return;
+        if(item.auth==='out' && state.user) return;
+        if(item.auth==='admin' && (!state.user || state.user.role!=='admin')) return;
+        const a = document.createElement('a'); a.href=item.href; a.textContent=item.name; a.onclick=()=>route(item.href); if(location.hash.startsWith(item.href)) a.classList.add('active'); n.appendChild(a);
+      });
+    }
+    function sectionTitle(title, right=''){ return `<div class="section-title"><h2>${title}</h2><div>${right||''}</div></div>`; }
+    function drawEmojiCanvas(el, emoji){ const ctx = el.getContext('2d'); const {width, height} = el.getBoundingClientRect(); el.width = width * devicePixelRatio; el.height = height * devicePixelRatio; ctx.scale(devicePixelRatio, devicePixelRatio); const grad = ctx.createLinearGradient(0,0,width,height); grad.addColorStop(0,'rgba(124,92,255,.25)'); grad.addColorStop(1,'rgba(34,227,255,.18)'); ctx.fillStyle = grad; ctx.fillRect(0,0,width,height); ctx.font = Math.min(width,height)*0.45 + 'px "Apple Color Emoji", "Segoe UI Emoji"'; ctx.textAlign='center'; ctx.textBaseline='middle'; ctx.shadowColor='rgba(124,92,255,.6)'; ctx.shadowBlur=24; ctx.fillText(emoji, width/2, height/2); }
+
+    // --------- Storefront Components ---------
+    function productCard(p){ const compare = p.compareAt ? `<span class="strikethrough">${money(p.compareAt)}</span>` : ''; const stock = p.stock>0 ? `<span class="pill">In stock: ${p.stock}</span>` : `<span class="pill" style="color:var(--hot)">Out</span>`; const rating = avgRating(p.id).toFixed(1); return `
+      <div class="card product">
+        <div class="img"><canvas data-emoji="${p.imgSeed}"></canvas><span class="badge">${rating}★</span></div>
+        <div class="body">
+          <div class="row spread"><div>${p.name}</div><div class="price">${money(p.price)} ${compare}</div></div>
+          <div class="muted">${p.category} › ${p.sub}</div>
+          <div class="row spread">${stock}<div class="row">
+            <a class="btn ghost" href="#/product/${p.id}" onclick="route('#/product/${p.id}')">View</a>
+            <button class="btn primary" ${p.stock? '' : 'disabled'} onclick="addToCart('${p.id}')">Add</button>
+          </div></div>
+        </div>
+      </div>`; }
+    function productGrid(list){ return `<div class="grid cols-4">${list.map(productCard).join('')}</div>`; }
+
+    // --------- Search & Filters (PLP) ---------
+    function plp(filters={}){
+      const {cat='', sub='', q='', sort=''} = filters;
+      let list = state.products.filter(p=> (!cat||p.category===cat) && (!sub||p.sub===sub) && (!q|| p.name.toLowerCase().includes(q) || p.tags.some(t=>t.includes(q))));
+      if(sort==='price-asc') list.sort((a,b)=>a.price-b.price);
+      if(sort==='price-desc') list.sort((a,b)=>b.price-a.price);
+      if(sort==='rating') list.sort((a,b)=>avgRating(b.id)-avgRating(a.id));
+      const right = `<div class='row'><select id='plpSort' class='input' onchange="route('#/plp?'+encodeURI(new URLSearchParams({...getPlpFilters(), sort:this.value}).toString()))">
+        <option value=''>Sort</option><option value='price-asc' ${sort==='price-asc'?'selected':''}>Price ↑</option><option value='price-desc' ${sort==='price-desc'?'selected':''}>Price ↓</option><option value='rating' ${sort==='rating'?'selected':''}>Rating</option></select></div>`;
+      const catSel = `<select id='plpCat' class='input' onchange="onPlpCatChange()"><option value=''>All Categories</option>${state.categories.map(c=>`<option value='${c.slug}' ${c.slug===cat?'selected':''}>${c.name}</option>`).join('')}</select>`;
+      const subSel = `<select id='plpSub' class='input' onchange="onPlpFilterChange()"><option value=''>All Subcategories</option>${(state.categories.find(c=>c.slug===cat)?.subs||[]).map(s=>`<option value='${s}' ${s===sub?'selected':''}>${s}</option>`).join('')}</select>`;
+      const qSel = `<input id='plpQ' class='input' placeholder='Search products...' value='${q}' onkeydown="if(event.key==='Enter') onPlpFilterChange()"/>`;
+      return `${sectionTitle('Products', right)}<div class='grid cols-3'>
+        <div class='card pad'><b>Filters</b><div style='height:8px'></div>${catSel}<div style='height:8px'></div>${subSel}<div style='height:8px'></div>${qSel}<div style='height:10px'></div><button class='btn primary' onclick='onPlpFilterChange()'>Apply</button></div>
+        <div class='grid cols-2' style='grid-column: span 2;'>${list.length? productGrid(list):`<div class='card pad'>No products found.</div>`}</div>
+      </div>`;
+    }
+    function getPlpFilters(){ const url = new URL(location.href); const s = new URLSearchParams(url.hash.split('?')[1]||''); return {cat:s.get('cat')||'', sub:s.get('sub')||'', q:s.get('q')||'', sort:s.get('sort')||''}; }
+    function onPlpCatChange(){ const cat = document.getElementById('plpCat').value; const filters = {...getPlpFilters(), cat, sub:''}; route('#/plp?'+encodeURI(new URLSearchParams(filters).toString())); }
+    function onPlpFilterChange(){ const cat = document.getElementById('plpCat').value; const sub = document.getElementById('plpSub').value; const q = document.getElementById('plpQ').value; const sort = document.getElementById('plpSort')?.value||''; route('#/plp?'+encodeURI(new URLSearchParams({cat, sub, q, sort}).toString())); }
+
+    // --------- Actions ---------
+    function addToCart(id){ const p = state.products.find(x=>x.id===id); if(!p||p.stock<=0) return alert('Out of stock'); const found = state.cart.find(i=>i.id===id); if(found) found.qty++; else state.cart.push({id, qty:1}); save(); toast(`${p.name} added to cart`); }
+    function changeQty(id, d){ const i = state.cart.find(x=>x.id===id); if(!i) return; i.qty += d; if(i.qty<=0) state.cart = state.cart.filter(x=>x.id!==id); save(); render(); }
+    function clearCart(){ state.cart=[]; save(); render(); }
+    function doSearch(){ const q = document.getElementById('search').value.trim().toLowerCase(); route('#/plp?'+encodeURI(new URLSearchParams({q}).toString())); }
+
+    // --------- Reviews ---------
+    function avgRating(pid){ const r = state.reviews.filter(x=>x.productId===pid); if(!r.length) return state.products.find(p=>p.id===pid)?.rating || 0; return r.reduce((a,b)=>a+b.rating,0)/r.length; }
+    function submitReview(e, pid){ e.preventDefault(); if(!state.user) return toast('Login to review','warn'); const rating = Number(document.getElementById('rv_rating').value); const text = document.getElementById('rv_text').value.trim(); if(!rating) return; state.reviews.push({productId:pid, user:state.user.email, rating, text, date:Date.now()}); save(); toast('Review submitted'); route('#/product/'+pid); return false; }
+
+    // --------- Pages ---------
+    const pages = {
+      home: () => {
+        const featured = state.products.slice(0,4); const latest = state.products.slice().reverse();
+        return `
+          <section class="hero">
+            <div class="card banner pad">
+              <h1>Shop the Dark‑Neon Collection</h1>
+              <p>Electronics, Fashion & Home — fast, secure, and slick. Sign up to unlock neon deals.</p>
+              <div class="cta"><a class="btn primary" href="#/plp" onclick="route('#/plp')">Browse Products</a><a class="btn ghost" href="#/cart" onclick="route('#/cart')">View Cart</a></div>
+            </div>
+            <div class="card pad">
+              <div class="notice">Tip: Press <b>Ctrl + /</b> to focus search. Your cart, users & orders are stored only in your browser (demo).</div>
+              <div style="height:8px"></div>
+              <div class="row" style="flex-wrap:wrap; gap:8px;">
+                ${state.categories.map(c=>`<span class="chip" onclick="route('#/plp?cat=${c.slug}')">${c.name}</span>`).join('')}
+              </div>
+            </div>
+          </section>
+          ${sectionTitle('Featured')} ${productGrid(featured)}
+          ${sectionTitle('Latest')} ${productGrid(latest)}
+        `;
+      },
+      categories: () => {
+        return `${sectionTitle('Categories & Subcategories')}
+          <div class="grid cols-3">
+            ${state.categories.map(c=>`
+              <div class="card pad">
+                <div class="row spread"><b>${c.name}</b><a class="link" href="#/plp?cat=${c.slug}" onclick="route('#/plp?cat=${c.slug}')">View →</a></div>
+                <div class="row" style="gap:6px; margin-top:8px">${c.subs.map(s=>`<span class='chip' onclick="route('#/plp?cat=${c.slug}&sub=${s}')">${s}</span>`).join('')}</div>
+              </div>`).join('')}
+          </div>`;
+      },
+      plp: () => plp(getPlpFilters()), // Product Listing Page
+      product: (id) => {
+        const p = state.products.find(x=>x.id===id); if(!p) return `<div class="card pad">Product not found.</div>`;
+        const reviews = state.reviews.filter(r=>r.productId===id).sort((a,b)=>b.date-a.date);
+        const rating = avgRating(id).toFixed(1);
+        return `
+          <div class="grid cols-2">
+            <div class="card"><div class="img" style="aspect-ratio:1/1"><canvas data-emoji="${p.imgSeed}"></canvas></div></div>
+            <div class="card pad">
+              <h2 style="margin:0 0 6px">${p.name}</h2>
+              <div class="muted">${p.category} › ${p.sub} · ${rating}★</div>
+              <div style="height:10px"></div>
+              <div class="row" style="align-items:baseline; gap:14px">
+                <div class="price" style="font-size:24px">${money(p.price)}</div>
+                ${p.compareAt? `<div class="strikethrough">${money(p.compareAt)}</div>`:''}
+                <span class="pill">Stock: ${p.stock}</span>
+              </div>
+              <div style="height:10px"></div>
+              <div class="row">
+                <button class="btn primary" onclick="addToCart('${p.id}')">Add to Cart</button>
+                <a class="btn ghost" href="#/cart" onclick="route('#/cart')">Go to Cart</a>
+              </div>
+              <div style="height:14px"></div>
+              <div class="muted">Tags: ${p.tags.join(', ')}</div>
+            </div>
+          </div>
+          ${sectionTitle('Customer Reviews', `<span class='pill'>${reviews.length} review(s)</span>`)}
+          <div class='grid cols-2'>
+            <div class='card pad'>
+              ${reviews.length? reviews.map(r=>`<div class='row spread'><div class='bubble bot'><b>${r.rating}★</b> — ${r.text||'<i>No comment</i>'}<div class='pill'>by ${r.user} · ${new Date(r.date).toLocaleDateString()}</div></div></div>`).join('') : 'No reviews yet.'}
+            </div>
+            <form class='card pad' onsubmit="return submitReview(event, '${p.id}')">
+              <b>Write a review</b>
+              <div style='height:8px'></div>
+              <select id='rv_rating' class='input' required><option value=''>Rating</option><option>5</option><option>4</option><option>3</option><option>2</option><option>1</option></select>
+              <div style='height:8px'></div>
+              <textarea id='rv_text' rows='3' placeholder='Share your experience (optional)'></textarea>
+              <div style='height:8px'></div>
+              <button class='btn primary'>Submit</button>
+              <div class='pill'>Login required to review.</div>
+            </form>
+          </div>
+        `;
+      },
+      cart: () => {
+        const items = state.cart.map(i=>({ ...i, p: state.products.find(x=>x.id===i.id) })).filter(x=>x.p); const subtotal = items.reduce((a,x)=>a + x.p.price * x.qty, 0);
+        return `${sectionTitle('Your Cart', items.length? `<a class="btn ghost" onclick="clearCart()">Clear</a>` : '')}
+          ${items.length? `
+            <div class="card pad">
+              <table class="table">
+                <thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Total</th><th></th></tr></thead>
+                <tbody>
+                  ${items.map(x=>`<tr>
+                      <td><a class="link" href="#/product/${x.p.id}" onclick="route('#/product/${x.p.id}')">${x.p.name}</a></td>
+                      <td>${money(x.p.price)}</td>
+                      <td><div class="qty"><button onclick="changeQty('${x.p.id}',-1)">−</button><b>${x.qty}</b><button onclick="changeQty('${x.p.id}',1)">+</button></div></td>
+                      <td>${money(x.p.price * x.qty)}</td>
+                      <td><a class="link" onclick="changeQty('${x.p.id}', -${Number.MAX_SAFE_INTEGER})">Remove</a></td>
+                    </tr>`).join('')}
+                </tbody>
+              </table>
+              <div class="row spread" style="margin-top:14px"><div class="muted">Taxes calculated at checkout.</div><div><b>Subtotal:</b> ${money(subtotal)}</div></div>
+              <div style="height:10px"></div>
+              <div class="row" style="justify-content:flex-end"><a class="btn primary" href="#/checkout" onclick="route('#/checkout')">Proceed to Checkout</a></div>
+            </div>` : `<div class="card pad">Your cart is empty. <a class="link" href="#/home" onclick="route('#/home')">Continue shopping →</a></div>`}
+        `;
+      },
+      checkout: () => {
+        if(!state.cart.length) return `<div class="card pad">Cart is empty.</div>`;
+        if(!state.user) return `<div class="card pad">Please <a class="link" href="#/login" onclick="route('#/login')">login</a> to continue.</div>`;
+        const items = state.cart.map(i=>({ ...i, p: state.products.find(x=>x.id===i.id) })).filter(x=>x.p);
+        const subtotal = items.reduce((a,x)=>a + x.p.price * x.qty, 0); const shipping = subtotal>150? 0 : 9.99; const total = subtotal + shipping;
+        return `${sectionTitle('Checkout')}
+          <div class="grid cols-2">
+            <form class="card pad" onsubmit="return placeOrder(event)">
+              <b>Billing & Shipping</b><div style="height:8px"></div>
+              <div class="grid cols-2">
+                <input class="input" id="fname" placeholder="First name" required value="${state.user?.name?.split(' ')[0]||''}" />
+                <input class="input" id="lname" placeholder="Last name" required value="${state.user?.name?.split(' ').slice(1).join(' ')||''}" />
+              </div>
+              <div style="height:8px"></div>
+              <input class="input" id="address" placeholder="Address" required />
+              <div style="height:8px"></div>
+              <div class="grid cols-3">
+                <input class="input" id="city" placeholder="City" required />
+                <input class="input" id="zip" placeholder="ZIP" required />
+                <select id="country" class="input"><option>Bangladesh</option><option>USA</option><option>UK</option></select>
+              </div>
+              <div style="height:12px"></div>
+              <b>Payment</b><div style="height:8px"></div>
+              <div class="row" style="gap:8px"><label class="chip active"><input type="radio" name="pay" checked /> Cash on Delivery</label><label class="chip"><input type="radio" name="pay" disabled /> Card (demo)</label></div>
+              <div style="height:14px"></div>
+              <button class="btn primary" type="submit">Place Order</button>
+            </form>
+            <div class="card pad">
+              <b>Order Summary</b>
+              <table class="table" style="margin-top:8px"><tbody>
+                ${items.map(x=>`<tr><td>${x.p.name} × ${x.qty}</td><td style="text-align:right">${money(x.p.price*x.qty)}</td></tr>`).join('')}
+                <tr><td>Shipping</td><td style="text-align:right">${shipping? money(shipping):'<span class="good">Free</span>'}</td></tr>
+                <tr><td><b>Total</b></td><td style="text-align:right"><b>${money(total)}</b></td></tr>
+              </tbody></table>
+            </div>
+          </div>`;
+      },
+      confirm: () => {
+        const id = state.lastOrderId; if(!id) return `<div class='card pad'>No recent order.</div>`;
+        const o = state.orders.find(x=>x.id===id); if(!o) return `<div class='card pad'>Order not found.</div>`;
+        return `${sectionTitle('Order Confirmation')}
+          <div class='card pad'>
+            <div class='notice'><b>Thank you!</b> Your order <b>${o.id}</b> has been placed.</div>
+            <div style='height:8px'></div>
+            <div>We sent a confirmation to <b>${o.userEmail}</b>. Status: <span class='pill'>${o.status}</span></div>
+            <div style='height:8px'></div>
+            <table class='table'><tbody>
+              ${o.items.map(i=>`<tr><td>${i.name} × ${i.qty}</td><td style='text-align:right'>${money(i.price*i.qty)}</td></tr>`).join('')}
+              <tr><td><b>Total</b></td><td style='text-align:right'><b>${money(o.total)}</b></td></tr>
+            </tbody></table>
+            <div class='row' style='justify-content:flex-end'><a class='btn primary' href='#/orders' onclick="route('#/orders')">View Orders</a></div>
+          </div>`;
+      },
+      orders: () => {
+        if(!state.user) return `<div class="card pad">Please <a class="link" href="#/login" onclick="route('#/login')">login</a> to view orders.</div>`;
+        const my = state.orders.filter(o=>o.userEmail===state.user.email);
+        if(!my.length) return `<div class="card pad">No orders yet. <a class="link" href="#/plp" onclick="route('#/plp')">Shop now →</a></div>`;
+        return `${sectionTitle('My Orders')}
+          <div class="card pad">
+            <table class="table">
+              <thead><tr><th>ID</th><th>Date</th><th>Items</th><th>Total</th><th>Status</th></tr></thead>
+              <tbody>
+                ${my.map(o=>`<tr>
+                  <td>${o.id}</td>
+                  <td>${new Date(o.date).toLocaleString()}</td>
+                  <td>${o.items.map(i=>i.name+' × '+i.qty).join(', ')}</td>
+                  <td>${money(o.total)}</td>
+                  <td><span class="pill">${o.status}</span></td>
+                </tr>`).join('')}
+              </tbody>
+            </table>
+          </div>`;
+      },
+      account: () => {
+        if(!state.user) return `<div class="card pad">You're not logged in. <a class="link" href="#/login" onclick="route('#/login')">Login</a> or <a class="link" href="#/signup" onclick="route('#/signup')">Signup</a>.</div>`;
+        return `${sectionTitle('Account')}
+          <div class="grid cols-2">
+            <div class="card pad">
+              <b>Profile</b><div style="height:8px"></div>
+              <div>Name: ${state.user.name}</div><div>Email: ${state.user.email}</div>
+              <div style="height:12px"></div>
+              <a class="btn ghost" href="#/settings" onclick="route('#/settings')">Account Settings</a>
+              ${state.user.role==='admin'? `<div class='pill'>Role: Admin</div>`: `<div class='pill'>Role: Customer</div>`}
+            </div>
+            <div class="card pad">
+              <b>Quick Links</b><div style="height:8px"></div>
+              <div class="row"><a class="btn ghost" href="#/orders" onclick="route('#/orders')">My Orders</a><a class="btn ghost" href="#/plp" onclick="route('#/plp')">Browse Products</a></div>
+            </div>
+          </div>`;
+      },
+      settings: () => {
+        if(!state.user) return `<div class="card pad">Please login.</div>`;
+        return `${sectionTitle('Account Settings')}
+          <form class="card pad" onsubmit="return updateProfile(event)">
+            <div class="grid cols-2"><input class="input" id="name" placeholder="Name" value="${state.user.name}" required /><input class="input" id="email" type="email" placeholder="Email" value="${state.user.email}" required /></div>
+            <div style="height:10px"></div>
+            <button class="btn primary">Save Changes</button>
+          </form>`;
+      },
+      login: () => `
+        ${sectionTitle('Login')}
+        <form class="card pad" onsubmit="return onLogin(event)">
+          <input class="input" id="lemail" type="email" placeholder="Email" required />
+          <div style="height:8px"></div>
+          <input class="input" id="lpass" type="password" placeholder="Password" required />
+          <div style="height:12px"></div>
+          <button class="btn primary" type="submit">Sign In</button>
+          <div style="height:8px"></div>
+          <div class="muted">No account? <a class="link" href="#/signup" onclick="route('#/signup')">Create one</a>. Admin demo: <code>admin@ifron.local / admin123</code></div>
+        </form>
+      `,
+      signup: () => `
+        ${sectionTitle('Create Account')}
+        <form class="card pad" onsubmit="return onSignup(event)">
+          <div class="grid cols-2">
+            <input class="input" id="sname" placeholder="Full name" required />
+            <input class="input" id="semail" type="email" placeholder="Email" required />
+          </div>
+          <div style="height:8px"></div>
+          <input class="input" id="spass" type="password" placeholder="Password (min 6)" minlength="6" required />
+          <div style="height:12px"></div>
+          <button class="btn primary" type="submit">Create account</button>
+        </form>
+      `,
+      about: () => `<div class="card pad"><b>Ifron Store</b> is a demo single‑file eCommerce app built for you. No backend. Data is in your browser only.</div>`,
+      privacy: () => `<div class="card pad">We do not collect data. This demo stores info in <b>localStorage</b> only.</div>`,
+      terms: () => `<div class="card pad">Use at your own risk. This is a demo.</div>`,
+      logout: () => { state.user=null; localStorage.removeItem('ifron:user'); toast('Logged out'); route('#/home'); return ''; },
+
+      // ---------- Admin (RBAC) ----------
+      admin: () => {
+        if(!state.user || state.user.role!=='admin') return `<div class='card pad'>Admins only. Please login as admin.</div>`;
+        const tab = parseRoute().p1 || 'dashboard';
+        const tabs = ['dashboard','orders','customers','inventory','rbac'];
+        const nav = `<div class='row' style='gap:8px'>${tabs.map(t=>`<span class='chip ${t===tab?'active':''}' onclick="route('#/admin/${t}')">${t[0].toUpperCase()+t.slice(1)}</span>`).join('')}</div>`;
+        let body = '';
+        if(tab==='dashboard') body = adminDashboard();
+        if(tab==='orders') body = adminOrders();
+        if(tab==='customers') body = adminCustomers();
+        if(tab==='inventory') body = adminInventory();
+        if(tab==='rbac') body = adminRBAC();
+        return `${sectionTitle('Admin Panel', nav)}${body}`;
+      },
+    };
+
+    // ---------- Admin Views ----------
+    function adminDashboard(){
+      const orders = state.orders; const revenue = orders.reduce((a,o)=>a+o.total,0); const today = new Date(); const todayStr = today.toDateString(); const todayOrders = orders.filter(o=> new Date(o.date).toDateString()===todayStr).length;
+      return `<div class='grid cols-3'>
+        <div class='card pad'><b>Total Orders</b><div style='font-size:28px; font-weight:800'>${orders.length}</div></div>
+        <div class='card pad'><b>Total Revenue</b><div style='font-size:28px; font-weight:800'>${money(revenue)}</div></div>
+        <div class='card pad'><b>Orders Today</b><div style='font-size:28px; font-weight:800'>${todayOrders}</div></div>
+      </div>`;
+    }
+    function adminOrders(){
+      if(!state.orders.length) return `<div class='card pad'>No orders yet.</div>`;
+      const statuses = ['processing','shipped','delivered','cancelled'];
+      return `<div class='card pad'><table class='table'><thead><tr><th>ID</th><th>Customer</th><th>Date</th><th>Total</th><th>Status</th><th>Update</th></tr></thead><tbody>
+        ${state.orders.map(o=>`<tr><td>${o.id}</td><td>${o.userEmail}</td><td>${new Date(o.date).toLocaleString()}</td><td>${money(o.total)}</td><td>${o.status}</td><td>
+          <select class='input' onchange="adminSetOrderStatus('${o.id}', this.value)">${statuses.map(s=>`<option ${o.status===s?'selected':''}>${s}</option>`).join('')}</select>
+        </td></tr>`).join('')}
+      </tbody></table></div>`;
+    }
+    function adminSetOrderStatus(id, st){ const o = state.orders.find(x=>x.id===id); if(!o) return; o.status = st; save(); toast('Order updated'); render(); }
+    function adminCustomers(){
+      const emails = Array.from(new Set(state.users.map(u=>u.email))); if(!emails.length) return `<div class='card pad'>No customers yet.</div>`;
+      return `<div class='card pad'><table class='table'><thead><tr><th>Name</th><th>Email</th><th>Role</th><th>Orders</th></tr></thead><tbody>
+        ${emails.map(e=>{ const u = state.users.find(x=>x.email===e)||{name:'(unknown)', role:'customer'}; const oc = state.orders.filter(o=>o.userEmail===e).length; return `<tr><td>${u.name}</td><td>${e}</td><td>${u.role||'customer'}</td><td>${oc}</td></tr>`; }).join('')}
+      </tbody></table></div>`;
+    }
+    function adminInventory(){
+      return `<div class='card pad'><table class='table'><thead><tr><th>Product</th><th>Category</th><th>Sub</th><th>Price</th><th>Stock</th><th>Save</th></tr></thead><tbody>
+        ${state.products.map(p=>`<tr>
+          <td>${p.name}</td><td>${p.category}</td><td>${p.sub}</td>
+          <td><input class='input' style='width:120px' id='px_${p.id}' value='${p.price}'></td>
+          <td><input class='input' style='width:120px' id='st_${p.id}' value='${p.stock}'></td>
+          <td><button class='btn primary' onclick="saveInv('${p.id}')">Save</button></td>
+        </tr>`).join('')}
+      </tbody></table></div>`;
+    }
+    function saveInv(id){ const p = state.products.find(x=>x.id===id); if(!p) return; p.price = Number(document.getElementById('px_'+id).value)||p.price; p.stock = Number(document.getElementById('st_'+id).value)||p.stock; toast('Inventory saved'); render(); }
+    function adminRBAC(){
+      return `<div class='card pad'>
+        <b>Role‑based Access Control</b><div class='pill'>Assign admin role (demo only)</div>
+        <div style='height:8px'></div>
+        <div class='grid cols-2'>
+          <div>
+            <table class='table'><thead><tr><th>User</th><th>Email</th><th>Role</th><th>Action</th></tr></thead><tbody>
+              ${state.users.map(u=>`<tr><td>${u.name}</td><td>${u.email}</td><td>${u.role||'customer'}</td><td>${u.role==='admin'?'—':`<a class='link' onclick="makeAdmin('${u.email}')">Make Admin</a>`}</td></tr>`).join('')}
+            </tbody></table>
+          </div>
+          <div class='notice'>Security note: This is a local demo. In production, enforce RBAC on a secure backend using JWTs/sessions and server‑side checks.</div>
+        </div>
+      </div>`;
+    }
+    function makeAdmin(email){ const u = state.users.find(x=>x.email===email); if(!u) return; u.role='admin'; if(state.user?.email===email) state.user.role='admin'; ls('ifron:users', state.users); save(); toast('Role updated'); render(); }
+
+    // --------- Forms & Auth ---------
+    function onSignup(e){ e.preventDefault(); const name = document.getElementById('sname').value.trim(); const email = document.getElementById('semail').value.trim().toLowerCase(); const pass = document.getElementById('spass').value; const existed = state.users.find(u=>u.email===email); if(existed) { toast('Email already exists','warn'); return false; } const u = {name,email,pass,role:'customer'}; state.users.push(u); ls('ifron:users', state.users); state.user = u; save(); toast('Account created. You are signed in.'); route('#/home'); return false; }
+    function onLogin(e){ e.preventDefault(); const email = document.getElementById('lemail').value.trim().toLowerCase(); const pass = document.getElementById('lpass').value; const u = state.users.find(u=>u.email===email && u.pass===pass); if(!u){ toast('Invalid credentials','warn'); return false; } state.user = {...u}; save(); toast('Welcome back'); route('#/home'); return false; }
+    function updateProfile(e){ e.preventDefault(); const n = document.getElementById('name').value.trim(); const m = document.getElementById('email').value.trim().toLowerCase(); const me = state.users.find(u=>u.email===state.user.email); if(me){ me.name=n; me.email=m; } state.user.name=n; state.user.email=m; ls('ifron:users', state.users); save(); toast('Profile updated'); route('#/account'); return false; }
+
+    function placeOrder(e){ e.preventDefault(); const items = state.cart.map(i=>({ ...i, p: state.products.find(x=>x.id===i.id) })).filter(x=>x.p); const subtotal = items.reduce((a,x)=>a + x.p.price * x.qty, 0); const shipping = subtotal>150? 0 : 9.99; const total = subtotal + shipping; const order = { id: 'ORD-' + Math.random().toString(36).slice(2,8).toUpperCase(), date: Date.now(), userEmail: state.user.email, items: items.map(x=>({id:x.p.id, name:x.p.name, qty:x.qty, price:x.p.price})), total, status:'processing' }; state.orders.unshift(order); state.cart = []; ls('ifron:lastOrderId', order.id); state.lastOrderId = order.id; save(); toast('Order placed!'); route('#/confirm'); return false; }
+
+    // --------- Toast ---------
+    let toastTimer; function toast(msg, type){ clearTimeout(toastTimer); let el = document.getElementById('toast'); if(!el){ el = document.createElement('div'); el.id='toast'; document.body.appendChild(el); } el.textContent = msg; el.style.position='fixed'; el.style.right='16px'; el.style.bottom='16px'; el.style.padding='12px 14px'; el.style.borderRadius='12px'; el.style.background = type==='warn' ? 'linear-gradient(135deg, var(--warn), #b45309)' : 'linear-gradient(135deg, var(--primary), var(--accent))'; el.style.color = type==='warn' ? '#100c04' : '#06111a'; el.style.fontWeight='800'; el.style.boxShadow='0 10px 30px rgba(0,0,0,.45)'; el.style.zIndex='9999'; toastTimer = setTimeout(()=>{ el.remove(); }, 2000); }
+
+    // --------- Chatbot (demo) ---------
+    function toggleChat(){ const p = document.getElementById('chatPanel'); p.style.display = p.style.display==='flex' ? 'none' : 'flex'; if(p.style.display==='flex'){ const log = document.getElementById('chatLog'); if(!log.dataset.welcomed){ botSay('Hi! Ask about orders, delivery, or returns.'); log.dataset.welcomed='1'; } document.getElementById('chatInput').focus(); } }
+    function sendChat(){ const i = document.getElementById('chatInput'); const msg = i.value.trim(); if(!msg) return; chatAdd(msg, 'user'); i.value=''; setTimeout(()=> botRespond(msg), 300); }
+    function chatAdd(text, who='bot'){ const log = document.getElementById('chatLog'); const div = document.createElement('div'); div.className = 'bubble '+who; div.textContent = text; log.appendChild(div); log.scrollTop = log.scrollHeight; }
+    function botSay(t){ chatAdd(t, 'bot'); }
+    function botRespond(m){ m=m.toLowerCase(); if(m.includes('order')) return botSay('You can see your orders under Account → Orders. For a new order, proceed to Checkout.'); if(m.includes('delivery')||m.includes('ship')) return botSay('Standard delivery in 3–5 days. Orders over $150 ship free (demo).'); if(m.includes('return')) return botSay('30‑day hassle‑free returns on delivered items (demo).'); if(m.includes('admin')) return botSay('Admin demo login: admin@ifron.local / admin123.'); return botSay("I'm a demo bot. Try: order, delivery, return, admin."); }
+
+    // --------- Render ---------
+    function render(){ navUI(); const {route:r, p1} = parseRoute(); const view = pages[r] ? pages[r](p1) : `<div class='card pad'>Not found.</div>`; document.getElementById('app').innerHTML = view; document.querySelectorAll('canvas[data-emoji]').forEach(c=> drawEmojiCanvas(c, c.dataset.emoji)); document.getElementById('search').onkeydown = (e)=>{ if(e.key==='Enter') doSearch(); }; }
+
+    // --------- Boot ---------
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.addEventListener('hashchange', render);
+    window.addEventListener('load', ()=>{ render(); updateCartCount(); });
+    document.addEventListener('keydown', (e)=>{ if(e.ctrlKey && e.key === '/') { e.preventDefault(); document.getElementById('search').focus(); } });
+  </script>
 </body>
-
 </html>
-
-
